@@ -15,14 +15,14 @@ namespace SP749415_MIS4200.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "My MIS 4200 Test Developer";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Info about me";
 
             return View();
         }
