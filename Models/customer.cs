@@ -13,5 +13,8 @@ namespace SP749415_MIS4200.Models
         public string email { get; set; }
         public string phone { get; set; }
         public DateTime customerSince { get; set; }
+        public string fullName {
+            get { return lastName + ", " + firstName; }
+            }
     }
 }
