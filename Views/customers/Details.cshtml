@@ -1,10 +1,10 @@
 ﻿@model SP749415_MIS4200.Models.customer
 
 @{
-    ViewBag.Title = "Customer Details";
+    ViewBag.Title = "Details";
 }
 
-<h2>Customer Details</h2>
+<h2>Details</h2>
 
 <div>
     <h4>customer</h4>
@@ -24,6 +24,14 @@
 
         <dd>
             @Html.DisplayFor(model => model.lastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.age)
         </dd>
 
         <dt>

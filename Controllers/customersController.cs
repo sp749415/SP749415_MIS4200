@@ -47,7 +47,7 @@ namespace SP749415_MIS4200.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "customerID,firstName,lastName,email,phone,customerSince")] customer customer)
+        public ActionResult Create([Bind(Include = "customerID,firstName,lastName,age,email,phone,customerSince")] customer customer)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace SP749415_MIS4200.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "customerID,firstName,lastName,email,phone,customerSince")] customer customer)
+        public ActionResult Edit([Bind(Include = "customerID,firstName,lastName,age,email,phone,customerSince")] customer customer)
         {
             if (ModelState.IsValid)
             {
