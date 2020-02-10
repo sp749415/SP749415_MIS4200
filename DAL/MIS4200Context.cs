@@ -20,6 +20,9 @@ namespace SP749415_MIS4200.DAL
         public DbSet<Orders> Orders { get; set; }
         public DbSet<Products> Products { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
+        public DbSet<Pets> Pets { get; set; }
+        public DbSet<Vets> Vets { get; set; }
+        public DbSet<Appointments> Appointments { get; set; }
 
         // add this method - it will be used later
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
