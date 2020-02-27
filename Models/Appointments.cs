@@ -10,8 +10,20 @@ namespace SP749415_MIS4200.Models
     {
         [Key]
         public int appointmentID { get; set; }
+
+        [Display(Name = "Description of the Appointment")]
+        [Required(ErrorMessage = "Description is required.")]
+        [StringLength(500)]
         public string description { get; set; }
+
+        [Display(Name = "Cost")]
+        [Required(ErrorMessage = "Cost is required.")]
+        [DataType(DataType.Currency)]
         public int cost { get; set; }
+
+        [Display(Name = "Appointment Date")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}",ApplyFormatInEditMode =true)]
         public DateTime appointmentDateTime { get; set; }
 
         // the next two properties link the appointment to the pet

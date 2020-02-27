@@ -4,12 +4,13 @@
     ViewBag.Title = "Vets";
 }
 
-<h2>Index</h2>
+<h2>Vets</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <span class="glyphicon glyphicon-plus"></span>
+    @Html.ActionLink("Create New Vet", "Create")
 </p>
-<table class="table">
+<table class="table table-striped">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.vetFirstName)
